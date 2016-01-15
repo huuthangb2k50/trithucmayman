@@ -1,0 +1,112 @@
+	.hiden-dks, .menu-phone, .menu-phone > a {
+    float: left;
+    width: 100%;
+	border: 1px solid #21A2E5;
+}
+.conten_col1, .menu-col1, .xem-ngay-tot-xau {
+    width: 100%;
+    float: left;
+	
+}.menu-col1 {
+    background: transparent linear-gradient(#3EC4F6, #108EDB) repeat scroll 0% 0%;
+    height: 40px;
+    line-height: 40px;
+}.menu_mobi_2 {
+    float: left;
+    width: 100%;
+}.menu_mobi_2 > ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: outside none none;
+}.menu_mobi_2 > ul > li {
+    float: left;
+    padding-left: 5px;
+    padding-right: 5px;
+    list-style: outside none none;
+    text-align: center;
+    border-left: 1px solid #D14248;
+}.conten_col1 {
+    background: #F3EDC9 url("../images/chi-tiet-body-02.png") repeat-x scroll 0% 0%;
+    padding-bottom: 15px;
+}.text_fill {
+    float: left;
+    margin-left: 15px;
+    width: 42%;
+    padding-top: 10px;
+}.text_fill_item {
+    float: left;
+    width: 100%;
+    color: #656565;
+}
+.submint_col, .text_fill_item {
+    border: medium none;
+    height: 24px;
+    line-height: 24px;
+}.submint_col {
+    background: transparent linear-gradient(#3EC4F6, #108EDB) repeat scroll 0% 0%;
+    color: #FFF;
+    text-align: center;
+    width: 100px;
+}.td_tin_noibat, .td_tin_noibat-home {
+    background: transparent linear-gradient(#3EC4F6, #108EDB) repeat scroll 0% 0%;
+    color: #FFF;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}.td_tin_noibat-home > span {
+    font-size: 16px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}.noibat-item-top, .tin_noibat {
+    float: left;
+    width: 100%;
+}.thumbnail-320x190 {
+    float: left;
+    width: 100%;
+}.thumbnail-320x190 img {
+    float: left;
+    width: 100%;
+    height: auto;
+}.dich_vu_tieude_h3 {
+    float: left;
+    padding-top: 10px;
+    width: 100%;
+}.h3seo {
+    float: left;
+    margin: 0px;
+    max-height: 36px;
+    width: 100%;
+}
+.h3seo, .tag-cat {
+    padding-bottom: 5px;
+}.h3seo > a {
+    color: #000;
+    font-size: 16px;
+    font-weight: 700;
+}.mo-ta-ngan {
+    float: left;
+    line-height: 18px;
+    max-height: 150px;
+    width: 100%;
+}
+.menu_mobi_2 > ul > li > a {
+    color: #FFF;
+}
+.menu_mobi_2 ul ul li a, .menu_mobi_2 > ul > li > a, .menu_mobi_2 > ul > li > a > h3, .menutop_bar ul ul li a, .menutop_bar > ul > li > a {
+    font-size: 13px;
+    text-decoration: none;
+}.menu_mobi_2 > ul > li {
+    list-style: outside none none;
+    text-align: center;
+	color:white;
+}
+.menu_mobi_2 > ul > li :hover  {
+	color:yellow;
+}
+.menu_mobi_2 > p  {
+	color:white;
+	padding-left:10px;
+	font-size:16px;
+}
