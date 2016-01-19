@@ -16,22 +16,20 @@
 							<img  src="${icon_home_png}" alt="Trang chủ" style="width:15px;height:15px;"></a>
 						</li>
 						<spring:url value="/dichvu/index" var="dichvu"></spring:url>
-						<li class='has-sub'><a  href='${dichvu }'>Đăng ký dịch vụ</a>
-						</li>
+						<li class='has-sub'><a  href='${dichvu }'>Đăng ký</a></li>
+						
+						<spring:url value="/huongdan/index" var="huongdanurl"></spring:url>
+						<li><a href="${huongdanurl }">Hướng dẫn</a></li>
+						
+						<spring:url value="/khuyenmai/index" var="khuyenmaiurl"></spring:url>
+						<li><a href="${khuyenmaiurl }">Khuyến mãi</a></li>
+						
 						<spring:url value="/hoidap/index" var="hoidapurl"></spring:url>
-							<li><a href="${hoidapurl }">Hỏi đáp</a></li>
+						<li><a href="${hoidapurl }">Hỏi đáp</a></li>
 							
-							<spring:url value="/huongdan/index" var="huongdanurl"></spring:url>
-							<li><a href="${huongdanurl }">Hướng dẫn</a></li>
+						<spring:url value="/danhsachtrungthuong/index" var="danhsachtrungthuongurl"></spring:url>
+						<li><a href="${danhsachtrungthuongurl }">Danh sách trúng thưởng</a></li>
 							
-							<%-- <spring:url value="/tuvan/index" var="tuvanurl"></spring:url> --%>
-							<li class='has-sub'><a href="${hoidapurl }">Tư vấn</a>
-								<ul id="uldvkhac">
-									<li><a href="${hoidapurl }" id="">Tử vi</a></li>
-									<li><a href="${hoidapurl }" id="">Phong thủy</a></li>
-									<li><a href="${hoidapurl }" id="">Lịch vạn sự</a></li>
-								</ul>
-							</li>
 					</ul>
                 </div>
             </div>
@@ -46,22 +44,20 @@
                             <img  src="${icon_home_png}" alt="Trang chủ" style="width:15px;height:15px;"></a>
                         </li>
                         
-                        <li class='has-sub'><a  href='${dichvu }'>Đăng ký dịch vụ</a>
-                        </li>
-                        <spring:url value="/hoidap/index" var="hoidapurl"></spring:url>
-							<li><a href="${hoidapurl }">Hỏi đáp</a></li>
+                        <spring:url value="/dichvu/index" var="dichvu"></spring:url>
+						<li class='has-sub'><a  href='${dichvu }'>Đăng ký</a></li>
+						
+						<spring:url value="/huongdan/index" var="huongdanurl"></spring:url>
+						<li><a href="${huongdanurl }">Hướng dẫn</a></li>
+						
+						<spring:url value="/khuyenmai/index" var="khuyenmaiurl"></spring:url>
+						<li><a href="${khuyenmaiurl }">Khuyến mãi</a></li>
+						
+						<spring:url value="/hoidap/index" var="hoidapurl"></spring:url>
+						<li><a href="${hoidapurl }">Hỏi đáp</a></li>
 							
-							<spring:url value="/huongdan/index" var="huongdanurl"></spring:url>
-							<li><a href="${huongdanurl }">Hướng dẫn</a></li>
-							
-							<%-- <spring:url value="/tuvan/index" var="tuvanurl"></spring:url> --%>
-							<li class='has-sub'><a href="${hoidapurl }">Tư vấn</a>
-								<ul id="uldvkhac">
-									<li><a href="${hoidapurl }" id="">Tử vi</a></li>
-									<li><a href="${hoidapurl }" id="">Phong thủy</a></li>
-									<li><a href="${hoidapurl }" id="">Lịch vạn sự</a></li>
-								</ul>
-							</li>
+						<spring:url value="/danhsachtrungthuong/index" var="danhsachtrungthuongurl"></spring:url>
+						<li><a href="${danhsachtrungthuongurl }">Danh sách trúng thưởng</a></li>
                     </ul>
                 </div><!--end #cssmenu-->
 			</div>

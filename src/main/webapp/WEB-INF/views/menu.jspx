@@ -7,6 +7,8 @@
             <menu:item id="i_controller__dichvuindex_id" messageCode="global_generic" url="/dichvu/index" z="JcC8KX8puREJ6jZHWo+1bQLcrf8="/>
             <menu:item id="i_controller__hoidapindex_id" messageCode="global_generic" url="/hoidap/index" z="G3XP3DOq18rfkiH0MkcICKLYCIw="/>
             <menu:item id="i_controller__huongdanindex_id" messageCode="global_generic" url="/huongdan/index" z="FGkdk3xS0QF0lGWmuKypwfaR/yo="/>
+            <menu:item id="i_controller__khuyenmaiindex_id" messageCode="global_generic" url="/khuyenmai/index" z="fAQMHMHo1bCzJZt0EA1iFEMc2V0="/>
+            <menu:item id="i_controller__danhsachtrungthuongindex_id" messageCode="global_generic" url="/danhsachtrungthuong/index" z="LXU0fGyKnI6RnOxEGHnKaTIMDtg="/>
         </menu:category>
     </menu:menu>
 </div>

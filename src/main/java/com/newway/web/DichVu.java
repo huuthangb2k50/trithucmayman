@@ -7,6 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -55,7 +56,8 @@ public class DichVu {
 		log.debug("DichVu :" +name);
 		if(name!=null && name.trim().length()>0 && !name.equalsIgnoreCase("anonymousUser")){
 			log.debug(" ds bundle co msisdn");	
-			result = getDsBundleStatus(name);
+			String msisdn = authentication.getName();
+			result = getDsBundleStatus(msisdn);
 		}else{
 			log.debug(" ds bundle full");
 			result = getDsBundle();
@@ -175,18 +177,20 @@ public class DichVu {
     private List<BundleStatus> getDsBundleStatus(String msisdn){
     	List<BundleStatus> result = new ArrayList<BundleStatus>();
     	Connection con = null;
-    	PreparedStatement pstm = null;
+    	Statement pstm = null;
 		String sql = "select a.bundle_name as bundlename, " +
 				     " a.price,tg_hieuluc||' '|| decode( lower(trim(donvi_tinh)),'ngay', 'Ngày','thang','Tháng'  ) as loaigoi, " + 
 				     " nvl(e.active,0) active " +
-				 "  from TTMM_CHARGE.CP_BUNDLES a LEFT OUTER JOIN (select * from TTMM_CHARGE.CP_SUBCRIBERS where msisdn =?) e " +
+				 "  from TTMM_CHARGE.CP_BUNDLES a LEFT OUTER JOIN (select * from TTMM_CHARGE.CP_SUBCRIBERS where msisdn ="+msisdn+") e " +
 				 " ON a.id = e.bundle_id order by a.price; ";
     	try{
+    		
+    		System.out.println(sql);
     		//con = getConnection();
     		con = SingletonConnection.getInstance().getConnInst();
-    		pstm = con.prepareStatement(sql);
-    		pstm.setString(1, msisdn);
-    		ResultSet rs = pstm.executeQuery();
+    		pstm = con.createStatement();
+    		//pstm.setString(1, msisdn);
+    		ResultSet rs = pstm.getResultSet();
     		BundleStatus bundle ; 
     		while(rs.next()){
     			bundle=new BundleStatus();

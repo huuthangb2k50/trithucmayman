@@ -19,3 +19,7 @@ jpa setup --database ORACLE --provider HIBERNATE --databaseName amedi --userName
 logging setup --level DEBUG --package PROJECT 
 logging setup --level DEBUG --package PROJECT 
 // Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-01-14 11:46:00
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log opened at 2016-01-19 09:24:50
+controller class --class ~.web.KhuyenMai --preferredMapping khuyenmai
+controller class --class ~.web.DanhSachTT --preferredMapping danhsachtrungthuong
+// Spring Roo 1.3.2.RELEASE [rev 8387857] log closed at 2016-01-19 12:03:30

@@ -194,7 +194,7 @@
   function ajax(pkgname,cmd){
 	 	//alert('pkgname='+pkgname +"&cmd="+cmd);
 	  $.ajax({
-          url : 'http://localhost:8080/trithucmayman/dichvu/ajax',
+          url : '/dichvu/ajax',
           data: 'pkgname='+pkgname +"&cmd="+cmd,
           success : function(data) {
         	//  alert(data);
